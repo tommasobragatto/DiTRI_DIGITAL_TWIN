@@ -1,0 +1,15 @@
+//
+//LINES
+//
+New Line.line0	Phases=3  Bus1=BUSX.1.2.3  Bus2=BUS1.1.2.3   R1=0.128   X1=0.119  Length=2.5  NormAmps=479      
+New Line.line1	Phases=3  Bus1=BUS1.1.2.3  Bus2=BUS2.1.2.3   R1=0.0892   X1=0.04768  Length=1  NormAmps=173      
+New Line.line2	Phases=3  Bus1=BUS2.1.2.3  Bus2=BUS3.1.2.3   R1=0.0736   X1=0.03936  Length=1  NormAmps=173   
+New Line.line3	Phases=3  Bus1=BUS3.1.2.3  Bus2=BUS4.1.2.3   R1=0.2136   X1=0.06900  Length=1  NormAmps=96   
+New Line.line4	Phases=3  Bus1=BUS2.1.2.3  Bus2=BUS5.1.2.3   R1=0.0812   X1=0.04336  Length=1  NormAmps=173   
+New Line.line5	Phases=3  Bus1=BUS5.1.2.3  Bus2=BUS6.1.2.3   R1=0.0628   X1=0.02024  Length=1  NormAmps=96   
+New Line.line6	Phases=3  Bus1=BUS6.1.2.3  Bus2=BUS7.1.2.3   R1=0.1408   X1=0.04548  Length=1  NormAmps=96   
+New Line.line7	Phases=3  Bus1=BUS12.1.2.3  Bus2=BUS13.1.2.3   R1=0.0115   X1=0.00460  Length=1  NormAmps=137   
+New Line.line8	Phases=3  Bus1=BUS13.1.2.3  Bus2=BUS14.1.2.3   R1=0.0054   X1=0.0017  Length=1  NormAmps=119   
+New Line.line9	Phases=3  Bus1=BUS13.1.2.3  Bus2=BUS15.1.2.3   R1=0.0016   X1=0.00067  Length=1  NormAmps=137   
+New Line.line10	Phases=3  Bus1=BUS13.1.2.3  Bus2=BUS16.1.2.3   R1=0.0016   X1=0.00067  Length=1  NormAmps=137   
+

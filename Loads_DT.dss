@@ -1,0 +1,10 @@
+New Load.Headquarters   phases=3 conn=wye Bus1=BUS8        kw=29.950000762939453 kvar=-13.789999961853027   kv=0.4
+New Load.Slow           phases=3 conn=wye Bus1=BUS8        kw=22  kvar=1.4  kv=0.4 
+New Load.Mazzocchio     phases=3 conn=wye Bus1=BUS10       kw=45  kvar=4  kv=0.4 
+New Load.Celi           phases=3 conn=wye Bus1=BUS11       kw=90  kvar=14  kv=0.4
+New Load.Storage         phases=3 conn=wye Bus1=BUS14        kw=0.8899999856948853 kvar=3.990000009536743  kv=0.4
+New Load.Fast             phases=3 conn=wye Bus1=BUS16      kw=0.019999999552965164 kvar=-0.9100000262260437  kv=0.4
+New Load.Croci            phases=3 conn=wye Bus1=BUS9        kw=150  kvar=23  kv=0.4
+New Load.PV185            phases=3 conn=wye Bus1=BUS15       kw=-17.479999542236328 kvar=21.030000686645508 kv=0.4
+New Load.PV60             phases=3 conn=wye Bus1=BUS8        kw=-5.669189040725296  kvar=0  kv=0.4
+New Load.altroSCOV        phases=3 conn=wye Bus1=BUS15       kw=100  kvar=75  kv=0.4

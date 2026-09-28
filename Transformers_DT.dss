@@ -1,0 +1,54 @@
+//
+//PRIMARY TRANSFORMERS
+//
+New Transformer.EXSIT            Buses=[PS.1.2.3 BusX.1.2.3.4]       Conns=[Delta Wye]	kVs=[132 20]
+~			        kVAs=[25000 25000]	XHL=14.6	
+~                           %Noloadloss=0.06    %Loadloss=0.49  %imag=0.4665
+~                           MaxTap=1.15         MinTap=0.85      NumTaps=24 
+
+// ON LOAD TAP CHANGER
+/*
+New Transformer.Reg1  Buses=[Bus0.1 BusX.1] Phases=1		Windings=2	XHL=0.01
+~		kVAs=[8333 8333]   KVs=[11.54 11.54]  %Loadloss=0.01
+~                MaxTap=1.15         MinTap=0.85     NumTaps=20 
+new regcontrol.cReg1  transformer=Reg1 winding=2  vreg=116  band=2  ptratio=100 reversible=yes maxtapchange=16
+
+New Transformer.Reg2  Buses=[Bus0.2 BusX.2] Phases=1		Windings=2	XHL=0.01
+~		kVAs=[8333 8333]   KVs=[11.54 11.54]  %Loadloss=0.01
+~                MaxTap=1.15         MinTap=0.85     NumTaps=20 
+new regcontrol.cReg2  transformer=Reg2 winding=2  vreg=116  band=2  ptratio=100 reversible=yes maxtapchange=16
+
+New Transformer.Reg3  Buses=[Bus0.3 BusX.3] Phases=1		Windings=2	XHL=0.01
+~		kVAs=[8333 8333]   KVs=[11.54 11.54]  %Loadloss=0.01
+~                MaxTap=1.15         MinTap=0.85     NumTaps=20 
+new regcontrol.cReg3  transformer=Reg3 winding=2  vreg=116  band=2  ptratio=100 reversible=yes maxtapchange=16
+*/
+
+//SECONDARY TRANSFORMERS
+
+New Transformer.ASM          Buses=[BUS2.1.2.3  BUS8.1.2.3.4]   Phases=3       Windings=2      Conns=[Delta Wye]	   
+~                               kVAs=[400 400]    kVs=[20 0.4]    %Loadloss=1.2   XHL=4
+//New Reactor.R_ASM                      Phases=1    Bus1=BUS8.4     Bus2=BUS8.0  R=5 X=0
+
+New Transformer.CROCI          Buses=[BUS4.1.2.3  BUS9.1.2.3.4]   Phases=3       Windings=2      Conns=[Delta Wye]	   
+~                               kVAs=[160 160]    kVs=[20 0.4]    %Loadloss=1.437   XHL=4
+//New Reactor.R_CROCI                      Phases=1    Bus1=BUS9.4     Bus2=BUS9.0  R=5 X=0
+
+New Transformer.MAZZOCCHIO          Buses=[BUS5.1.2.3  BUS10.1.2.3.4]   Phases=3       Windings=2      Conns=[Delta Wye]	   
+~                               kVAs=[50 50]    kVs=[20 0.4]    %Loadloss=1.8   XHL=4
+//New Reactor.R_MAZZOCCHIO                      Phases=1    Bus1=BUS10.4     Bus2=BUS10.0  R=5 X=0
+
+New Transformer.CELI          Buses=[BUS6.1.2.3  BUS11.1.2.3.4]   Phases=3       Windings=2      Conns=[Delta Wye]	   
+~                               kVAs=[100 100]    kVs=[20 0.4]    %Loadloss=1.8   XHL=4
+//New Reactor.R_CELI                      Phases=1    Bus1=BUS11.4     Bus2=BUS11.0  R=5 X=0
+
+New Transformer.SCOV          Buses=[BUS7.1.2.3  BUS12.1.2.3.4]   Phases=3       Windings=2      Conns=[Delta Wye]	   
+~                               kVAs=[250 250]    kVs=[20 0.4]    %Loadloss=1.359   XHL=4
+//New Reactor.R_SCOV                      Phases=1    Bus1=BUS12.4     Bus2=BUS12.0  R=5 X=0
+
+
+
+
+
+
+

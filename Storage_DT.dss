@@ -1,0 +1,35 @@
+//
+//STORAGE
+//
+
+// Creo la curva che rappresenta l'efficienza dell'inverter al variare della potenza
+New XYcurve.MyEff    npts=6 xarray=[0.1 0.2 0.3 0.5 0.75 1] yarray=[0.9425 0.9638 0.9666 0.9684 0.9667 0.9635]
+
+// Inserisco gli storage
+New Storage.BEMS phases=3 Bus1=BUS8 kv=0.4 kwrated=10 kwhrated=30
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=100  state=idling
+
+New Storage.Celi phases=3 Bus1=BUS11 kv=0.4 kwrated=10 kwhrated=10
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=100  state=idling
+
+New Storage.Mazzocchio phases=3 Bus1=BUS10 kv=0.4 kwrated=5 kwhrated=5
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=100  state=idling
+
+New Storage.Croci phases=3 Bus1=BUS9 kv=0.4 kwrated=16 kwhrated=16
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=100  state=idling
+
+New Storage.Scov phases=3 Bus1=BUS14 kv=0.4 kwrated=72 kwhrated=66
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=100  state=idling
+
+New Storage.Slow phases=3 Bus1=BUS8 kv=0.4 kwrated=22 kwhrated=70
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=0  state=charging
+
+New Storage.Fast phases=3 Bus1=BUS16 kv=0.4 kwrated=50 kwhrated=70
+~	effcurve=Eff          pf=1
+~	%reserve=0	  %charge=100	%discharge=0  state=charging

@@ -1,0 +1,15 @@
+// 
+// ########## RUN
+//
+clear
+Compile [Master_DT.dss]  ! Compile the master file
+
+// 
+// ########## ANALYSIS
+//
+
+set maxcontroliter=50
+set stepsize=20s
+Set voltagebases=[132 20 0.4]		! Fisso le tensioni di base
+calcvoltagebases				! Calcolo le tensioni di base in ogni zona
+solve

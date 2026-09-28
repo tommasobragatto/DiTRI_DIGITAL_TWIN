@@ -1,0 +1,15 @@
+Clear
+Set DefaultBaseFrequency=50
+
+// DIMENSIONO CABINE PRIMARIE
+New Circuit.ExSit    Phases=3    Bus1=PS.1.2.3    Bus2=PS.10.10.10
+~		    BasekV=132	        baseMVA=100             pu=1.0282051282051283 angle=02
+~			            Isc3=12433	    Isc1=11816   x1r1=10  x0r0=5
+New Reactor.RneutralExSit	    Phases=1 	        Bus1=PS.10     Bus2=PS.0	     R=0.01	X=0
+
+
+//COMPONENTI
+Redirect Lines_DT.dss
+Redirect Transformers_DT.dss
+Redirect Loads_DT.dss
+Redirect Storage_DT.dss
